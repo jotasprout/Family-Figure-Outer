@@ -14,25 +14,28 @@ class Main {
         System.out.println("        ~~~~~ Ye Olde Instructions ~~~~~");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println();
-        System.out.println();
 
         Scanner scan = new Scanner(System.in);
+
+        System.out.println("First, some questions about you.");
 
         // FamilyMember me = new FamilyMember();
         System.out.println("What's your name?");
         String yourName = scan.next();
 
         System.out.println("What's your gender?");
-        String yourAge = scan.next();
-
-        System.out.println("What's your age?");
         String yourGender = scan.next();
 
-        System.out.println("Your name is " + yourName + ", you're a .");
-        // me.put(name, yourName);
-        FamilyMember me = new FamilyMember(yourName);
-        System.out.println("Your name be " + me.name + ".");
-        scan.close();
+        System.out.println("What's your age?");
+        int yourAge = scan.nextInt();
 
+        FamilyMember me = new FamilyMember(yourName);
+        me.setGender(yourGender);
+        me.setAge(yourAge);
+
+        String thisGuy = me.toString();
+        System.out.println(thisGuy);
+
+        scan.close();
     }
 }
