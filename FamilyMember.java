@@ -17,4 +17,8 @@ public class FamilyMember {
     FamilyMember(String name) {
         this.name = name;
     }
+
+    public void printMember(String name, int age, String rel) {
+
+    }
 }
