@@ -1,16 +1,20 @@
-import java.util.ArrayList;
+//import java.util.*;
 
-public class FamilyMember 
-{
-    private String name;
-    private String age;
+public class FamilyMember {
+    String name;
+    int age;
+    String rel;
 
-    private ArrayList<Siblings> siblings = new ArrayList<Siblings>();
-    
-    public FamilyMember(String name, int age, String rel)
-    {
+    FamilyMember(String name, int age, String rel) {
         this.name = name;
         this.age = age;
         this.rel = rel;
+    }
+
+    FamilyMember() {
+    };
+
+    FamilyMember(String name) {
+        this.name = name;
     }
 }
