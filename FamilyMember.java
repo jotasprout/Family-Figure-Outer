@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class FamilyMember {
+    int ID = 0; // for any name conflicts
     String name;
     int age;
     String rel;
@@ -29,12 +30,28 @@ public class FamilyMember {
 
     // GETTERS AND SETTERS
 
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID + 1;
+    }
+
     public String getGender() {
         return gender;
     }
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getRel() {
+        return rel;
+    }
+
+    public void setRel(String Rel) {
+        this.rel = rel;
     }
 
     public int getAge() {
@@ -55,6 +72,6 @@ public class FamilyMember {
 
     @Override
     public String toString() {
-        return "Your name is " + name + ", you're a " + age + "-year-old " + gender + ".";
+        return name + " is a " + age + "-year-old " + gender + " and your" + rel + ".";
     }
 }
