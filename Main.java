@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 class Main {
     public static void main(String[] args) {
@@ -44,7 +44,7 @@ class Main {
         FamilyMember mom = new FamilyMember(momName);
         mom.setGender("female");
         mom.setAge(momAge);
-        mom.setRel("mother");
+        mom.setRel(" mother");
 
         // YOUR FATHER
         System.out.println("What is your father's name?");
@@ -56,7 +56,7 @@ class Main {
         FamilyMember dad = new FamilyMember(dadName);
         dad.setGender("male");
         dad.setAge(dadAge);
-        dad.setRel("father");
+        dad.setRel(" father");
 
         String myself = me.toString();
         System.out.println(myself);
